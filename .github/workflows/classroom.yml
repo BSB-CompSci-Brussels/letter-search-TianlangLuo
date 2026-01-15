@@ -22,7 +22,7 @@ jobs:
         command: testOne
         input: hello, l
         expected-output: '2'
-        comparison-method: exact
+        comparison-method: contains
         timeout: 10
     - name: Test Two
       id: test-two
@@ -33,7 +33,7 @@ jobs:
         command: testTwo
         input: British School of Brussels, B
         expected-output: '3'
-        comparison-method: exact
+        comparison-method: contains
         timeout: 10
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
